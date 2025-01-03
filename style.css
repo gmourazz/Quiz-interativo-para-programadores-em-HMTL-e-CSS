@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz para programadores</title>
+        <meta name="description" content="Um quiz interativo para testar seus conhecimentos">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                background: url('tech-background.jpg') no-repeat center center fixed;
+                background-size: cover;
+                color: #ffffff;
+                font-family: Arial, sans-serif;
+            }
+
+            header, footer {
+                text-align: center;
+                padding: 10px;
+                background: rgba(0, 0, 50, 0.8);
+            }
+
+            main {
+                background: rgba(0, 0, 50, 0.9);
+                padding: 20px;
+                border-radius: 10px;
+                max-width: 800px;
+                margin: 20px auto;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            }
+
+            h1, h2 {
+                color: #00ffff;
+            }
+
+            form input, form textarea, form select {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #00ffff;
+                border-radius: 5px;
+            }
+
+            button {
+                padding: 10px 20px;
+                background: #00ffff;
+                border: none;
+                color: #000;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            table, th, td {
+                border: 1px solid #00ffff;
+            }
+
+            th, td {
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Quiz interativo para programadores</h1>
+            <p>Teste seus conhecimentos em programação e veja qual pontuação você consegue fazer</p>
+        </header>
+        <main>
+            <!--Introdução-->
+            <section><!--Pergunta 1: múltipla escolha-->
+                <h2>Sobre esse quiz</h2>
+                <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimentos em programação, como <em>linguagens de programação</em>, conceitos básicos e mais</p>
+                <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data. <br>Desafie-se com este quiz!</p>
+                <p>Você poderá encontrar alguns acrônimos como <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, que são comumente usados em questões relacionadas ao desenvolvimento web</p>
+        <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas web?</h2>
+        <form>
+             <input type="radio" value="Python" id="p1a"
+             name="pergunta1">
+             <label for="p1a">Python</label><br>
+             <input type="radio" value="HTML" id="p1b"
+             name="pergunta1">
+             <label for="p1b">HTML</label><br>
+             <input type="radio" value="JavaScript" id="p1c"
+             name="pergunta1">
+             <label for="p1c">JavaScript</label><br>
+             <input type="radio" value="Ruby" id="p1d"
+             name="pergunta1">
+             <label for="p1d">Ruby</label><br>
+        </form>
+    </section>
+            <section><!--Pergunta 2: texto-->
+                <h2>Pergunta 2: Na URL https://www.google.com o trecho "google.com" é o ______</h2>
+            <form>
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite a sua resposta...">
+            </form>
+        </section>
+            <section><!--Pergunta 3: senha-->
+            <h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
+            <form>
+                <input type="password" id="p3" name="pergunta3" placeholder="Digite uma senha...">
+            </form>
+        </section>
+        <section><!--Pergunta 4: data-->
+            <h2>Pergunta 4: Em que ano HTML lançou sua primeira versão?</h2>
+            <form>
+                <input type="date" id="p4" name="pergunta4">
+            </form>
+        </section>
+        <section><!--Pergunta 5: seleção múltipla-->
+            <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
+            <form>
+                <input type="checkbox" id="p5a" name="pergunta5" value="Javascript">
+                <label for="p5a">Javascript</label>
+                <input type="checkbox" id="p5b" name="pergunta5" value="HTML">
+                <label for="p5b">HTML</label>
+                <input type="checkbox" id="p5c" name="pergunta5" value="Java">
+                <label for="p5c">Java</label>
+                <input type="checkbox" id="p5d" name="pergunta5" value="CSS">
+                <label for="p5d">CSS</label>
+        </form>
+        </section>
+    </main>
+        <footer>
+            <p>&copy;Quiz de programadores. Todos os direitos reservados.</p>
+            <p>Para conhecer mais sobre mim clique aqui <a href="sobremim.html" target="_blank">clique aqui</a></p>
+        </footer>                
+    </body>
+</html>
